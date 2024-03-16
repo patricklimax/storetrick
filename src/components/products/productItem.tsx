@@ -32,7 +32,7 @@ const ProductItem = ({ item }: Props) => {
         <img src={item.image} alt={item.name} className='w-full h-[170px] object-cover rounded-sm' />
       </div>
       <div className='p-2'>
-        <div className="w-full text-center rounded-sm bg-background py-2">
+        <div className="w-full text-center rounded-sm bg-background py-2 font-semibold">
           {item.name}
         </div>
         <div className="w-full h-16px] rounded-sm text-center py-3 text-2xl font-semibold opacity-50">

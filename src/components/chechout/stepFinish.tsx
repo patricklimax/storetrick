@@ -1,7 +1,7 @@
 import { useCheckoutStore } from '@/stores/checkoutStore';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import { CheckoutSteps } from '@/types/checkoutSteps';
 import { GenerateMessage } from '@/lib/generateMessage';
 
@@ -10,6 +10,7 @@ type Props = {
 }
 
 const StepFinish = ({ setStep }: Props) => {
+  const [checkoutOpen, setCheckoutOpen] = useState(false)
   const { name } = useCheckoutStore(state => state)
 
   const message = GenerateMessage()

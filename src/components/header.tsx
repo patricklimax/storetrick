@@ -32,11 +32,11 @@ const Header = () => {
     <Card className='px-4 mt-2 mb-4'>
       <header className='flex items-center justify-between py-4'>
         <Logo />
-        <ul className='hidden md:flex md:gap-6 md:items-center'>
+        {/* <ul className='hidden md:flex md:gap-6 md:items-center'>
           <li>Home</li>
           <li>Categorias</li>
           <li>Contato</li>
-        </ul>
+        </ul> */}
         <div className='flex gap-4 items-center'>
           <ThemeToogle />
           <Sheet>
@@ -88,7 +88,6 @@ const Header = () => {
               <CheckouDialog
                 open={checkoutOpen}
                 onOpenChange={setCheckoutOpen}
-
               />
             </SheetContent>
           </Sheet>
